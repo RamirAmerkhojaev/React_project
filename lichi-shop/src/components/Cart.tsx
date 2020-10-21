@@ -1,13 +1,8 @@
 import React, { Component } from 'react'
 
-interface Props {
-    
-}
-interface State {
-    
-}
 
-export default class Cart extends Component<Props, State> {
+
+export default class Cart extends Component {
     state = {}
 
     render() {

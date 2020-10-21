@@ -4,7 +4,6 @@ import './App.css'
 import DataProvider from "./databases/DataProvider"
 import Section from "./components/Section"
 import Header from "./components/Header"
-import ListOfCategories from './components/ListOfCategories';
 
 class App extends Component {
     render() {

@@ -9,6 +9,13 @@ p {
     font-size: 25px;
 }
 
+.svg {
+    position: absolute;
+    margin-top: -935px;
+    margin-left: -100px;
+
+}
+
 #product {
     width: 100%;
     display: flex;

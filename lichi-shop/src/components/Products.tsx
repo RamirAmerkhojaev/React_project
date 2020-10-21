@@ -4,7 +4,7 @@ import { products } from '../databases/database'
 import { ReactElement } from 'react'
 import "../styles/Products.css"
 import HoverImage from 'react-hover-image'
-import ListOfCategories from './ListOfCategories'
+import Back from "../svg/backspace-solid.svg"
 
 export default function Products(): ReactElement {
 
@@ -14,6 +14,8 @@ export default function Products(): ReactElement {
     
     return (
         <div id = "product">
+            
+            <img src={Back} className = "svg" alt="" width = "40" onClick={(e) => {e.preventDefault();window.location.href='/categories';}}/>
             <p>Products</p>
             {
                 products.filter(item => item.category == category).map(item =>(

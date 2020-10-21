@@ -4,7 +4,6 @@ import "../styles/Categories.css"
 import { DataContext } from "../databases/DataProvider"
 import HoverImage from 'react-hover-image'
 import 'react-medium-image-zoom/dist/styles.css'
-import ListOfCategories from "./ListOfCategories";
 import { RouteChildrenProps } from "react-router";
 
 
@@ -19,6 +18,16 @@ export default class Categories extends Component<RouteChildrenProps> {
 
         return (
             <div id = "category">
+                <div className = "topCategories">
+                    <nav>
+                        { categories.map((cat: { cat_id: number; cat_name: string; cat_image: string; cat_image2: string}) =>  (
+                           <ul className = 'topCategoriesList'>
+                                <a href={`categories/${cat.cat_id}/products`}><li>{cat.cat_name}</li></a>
+                            </ul>
+                        ))
+                        }    
+                    </nav>    
+                </div>
                 { 
                     categories.map((cat: { cat_id: number; cat_name: string; cat_image: string; cat_image2: string}) =>  (
                         <div className="card" key = {cat.cat_id}>

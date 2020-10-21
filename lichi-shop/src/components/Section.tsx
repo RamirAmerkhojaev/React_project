@@ -5,16 +5,9 @@ import Home from './Home'
 import ProductDetail from './ProductDetail'
 import Products from './Products'
 import "../index.css"
-import ListOfCategories from './ListOfCategories'
 
-interface Props {
-    
-}
-interface State {
-    
-}
 
-export default class Section extends Component<Props, State> {
+export default class Section extends Component {
     state = {}
     
 
